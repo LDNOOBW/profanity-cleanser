@@ -125,7 +125,7 @@ module.exports = {
             if( index != -1)
             {
                 keyReplacement = replacement[repPatt.pattern](key, repPatt.word);
-                var regex = new RegExp('\\b'+ key + '\\b', 'g');
+                var regex = new RegExp('\\b'+ key + '\\b', 'gi');
                 origString = origString.replace(regex, keyReplacement);
                 lowerStr = origString.toLowerCase();
             }
